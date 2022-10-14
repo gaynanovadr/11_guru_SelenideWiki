@@ -18,7 +18,7 @@ public class SelenideGithubTest {
 
     @DisplayName("Checking for JUnit5 sample code on the SoftAssertions page on Github")
     @Test
-    void selenideWikiOnGithubSearchTest() {
+    void junitSampleCodeOnGithubSearchTest() {
         open("https://github.com");
         $("input[type='text']").setValue("selenide").pressEnter();
         $$(".repo-list li").first().$("a").click();
